@@ -1,0 +1,674 @@
+/*
+Theme Name: Aranax
+Theme URI: http://www.aranaxweb.com/wordpress-theme/university
+Description: A theme built for educational institute.
+Author: Sanjoy Chowdhury
+Author URI: http://www.aranaxweb.com/
+Version: 1.0
+Tags: responsive, gree, blue, bootstrap, wordpress, educational institute, college, university
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('css/bootstrap.min.css'); 
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+body {
+	background-color: #FFF;/*#084883;*/
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	line-height: 1.3857;
+	color: #515151;
+}
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: 'Neuton', serif;*/
+	font-family: "Open Sans Condensed",sans-serif;
+}
+a {
+	color: #084883;
+	-webkit-transition: color 400ms, background-color 400ms;
+	-moz-transition: color 400ms, background-color 400ms;
+	-o-transition: color 400ms, background-color 400ms;
+	transition: color 400ms, background-color 400ms;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #55C83A;
+}
+
+/************
+*	NAVBAR 
+*/
+.main-nav {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(8, 72, 131, 0.7);
+	border-bottom: 1px solid #FFF;
+	z-index: 999;
+}
+#page-header .main-nav {
+	background-color: rgba(8, 72, 131, .99);
+}
+.main-nav .container {
+	width: 100%;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.navbar-right li a {
+	padding: 12px 16px;
+	font-size: 16px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	border-right: 1px solid #FFF;
+}
+.navbar-right li:first-child {
+	border-left: 1px solid #FFF;
+}
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active, 
+.nav > li.current-menu-item > a, .nav > li.current_page_parent > a {
+	background: #55c83a;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: #55c83a;
+	border-color: #FFF;
+}
+.navbar-nav > li > .dropdown-menu { 
+	margin-top: 1px;	
+}	
+.dropdown-menu {
+	background-clip: padding-box;
+	background-color: rgba(8, 72, 131, 0.85);
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	display: none;
+	float: left;
+	font-size: 14px;
+	left: 0;
+	list-style: outside none none;
+	margin: 2px 0 0;
+	min-width: 160px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+.dropdown-menu li {
+	border-left: 1px solid #FFF;
+}
+.dropdown-menu li:last-child {
+	border-bottom: 1px solid #FFF;
+}
+.dropdown-menu li a {
+	padding: 6px 10px;
+}  
+.accordion-nav {
+	margin: 0;
+	padding: 0;
+}
+.accordion-nav li {
+	list-style-type: none;
+	margin: 2px 0;
+}
+.accordion-nav li > ul {
+	margin-left: -20px;
+}
+.accordion-nav li a {
+	background-color: transparent;
+	font-weight: 500;
+}
+
+.accordion-nav li.current-menu-item a {
+	font-weight: 700;
+	color: #55C83A;
+}
+  
+.university-logo {
+	width: 468px;
+	position: absolute;
+	top: 48px;
+}
+
+.website-title {
+	font-size: 32px;
+	font-weight: 300;
+	color: #FFF;
+	margin: 24px 0;
+}
+
+/***********
+* HEADER 
+*/
+#header {
+	background: rgb(8, 72, 131) url(images/homepage-bg.jpg) no-repeat 0 0;
+	background-position: center;
+	height: 768px;
+}
+
+#page-header {
+	/*background: rgb(8, 72, 131) url(images/web-page-header-bg.jpg) no-repeat 0 0;*/
+	background: #55c83a ;
+	background-position: center;
+	height: 172px;
+}
+
+.homepage-program {
+	margin-top: -312px;
+	border-bottom: 4px solid #218233;
+}
+
+.section-title {
+	font-weight: 700;
+}
+.section-title a, .section-title a:visited {
+	color: #084883;
+	-webkit-transition: color 400ms, background-color 400ms;
+	-moz-transition: color 400ms, background-color 400ms;
+	-o-transition: color 400ms, background-color 400ms;
+	transition: color 400ms, background-color 400ms;
+}
+.section-title a:hover,
+.section-title a:focus {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.thin-section-title {
+	font-weight: 200;
+	color: #218233;
+}
+
+.news-section-title {
+	font-size: 18px;
+	font-weight: 700;	
+	margin-top: 12px;
+	margin-bottom: 4px;
+}
+.news-section-date {
+	font-size: 14px;
+	font-weight: 200;	
+	margin-top: 0;
+	float: left;
+	width: 80px;
+}
+.news-section-time {
+	font-size: 14px;
+	font-weight: 200;	
+	margin-top: 0;
+	float: left;
+	width: 200px;
+}
+.news-section-content {
+	clear: both;
+	display: block;
+}
+
+.read-more {
+	display: block;
+	margin-bottom: 30px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 100;
+	text-transform: lowercase;
+	transition: all 0.2s ease 0s;	
+}
+
+.vertical-scroller-container {
+	height: 280px;
+}
+
+.homepage-program a.read-more, .homepage-program a.read-more:visited {
+	color: #1F662C;
+	-webkit-transition: color 400ms, background-color 400ms;
+	-moz-transition: color 400ms, background-color 400ms;
+	-o-transition: color 400ms, background-color 400ms;
+	transition: color 400ms, background-color 400ms;
+}
+.homepage-program a.read-more:hover,
+.homepage-program a.read-more:focus {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.login-section {
+	margin: 30px 0 30px 0px;
+}
+.login-section .study-center {
+	color: #218233;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.login-section .study-center a {
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	margin: 4px 0;
+}
+
+/***********
+* COLOR 
+*/
+.blue-text {
+	color: #084883;
+}
+
+.green-bg {
+	background: rgba(85, 200, 58, 0.95);
+}
+.green-bg .section-title {
+	color: rgb(8, 72, 131);
+}
+.green-bg .section-content {
+	color: #FFF;
+}
+.grey-bg {
+	background: #E3E3E3;
+}
+.light-grey-bg {
+	background: #F9F9F9;
+}
+.dark-grey-bg {
+	background: #7C7C7C;
+}
+/*************
+* FORM 
+*/
+.btn {
+	border-radius: 0;
+}    
+.btn-success {
+	background-color: #218233;
+	border-color: #4cae4c;
+	color: #FFF;
+}
+.btn-primary {
+	background-color: #084883;
+	border-color: #11457F;
+	color: #FFF;
+}
+
+.homepage-login-btn {
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFF;
+}
+
+select.form-error, textarea.form-error, input[type="text"].form-error, input[type="password"].form-error {
+	border: 2px solid #c00;
+}
+
+/**********
+* PAGE HEADER
+*/
+.page-header {
+	border-bottom: none;
+	margin: 0;
+}
+
+/**********
+* CONTACT
+*/
+#map {
+	width: 100%;
+	height: 360px;
+	border: 4px solid #C4C4C4;
+}
+.box {
+	width: 48.75%;
+	display: table-cell;
+	margin: 0 0 10px 0;
+}
+.inner-content {
+	background: #F2F2F2;
+	padding: 10px;
+	min-height: 204px;
+}
+.box h3 {
+	margin: 0;	
+}
+
+/***********
+*	NOTICE
+*/
+
+.notice-item h3 {
+	margin-top: 0;
+}
+.notice-item-content {
+	display: block;
+	border-bottom: 2px solid #094A82;
+	margin-bottom: 10px;
+}
+.date {
+	position: relative;
+	width: 70px;
+	font-family: Georgia, serif;
+	color: #999;
+	margin: 0 auto;
+}
+ 
+.day, .month, .year {
+	position: absolute;
+}
+ 
+.day { 
+	font-size: 30px;
+	top: 24px;
+	color: #094A82;
+}
+ 
+.month { 
+	top: 4px;
+	left: 0;  
+	font-size: 18px;
+	color: #55C83A;
+}
+ 
+.year { 
+	top: 20px;
+	right: 4px;
+	font-size: 20px;
+	rotation: -90deg !important;
+	/* ** Hacks ** */
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);  
+}
+
+/**********
+* FOOTER 
+*/
+
+.footer ul li {
+	font-size: 14px;
+	padding: 2px 0;
+}
+.footer-section-title {
+	font-weight: 700;
+	color: #218233;
+}
+
+.copyright {
+	font-size: 12px;
+	padding: 16px 0 8px 0;
+	color: #E3E3E3;
+}
+
+.copyright a {
+	color: #E3E3E3;
+}
+
+/* margin */
+.top-mrg-sm {
+	margin-top: 10px;
+}
+.top-mrg-md {
+	margin-top: 20px;
+}
+.top-mrg-lg {
+	margin-top: 30px;
+}
+
+.btm-mrg-sm {
+	margin-bottom: 10px;
+}
+.btm-mrg-md {
+	margin-bottom: 20px;
+}
+.btm-mrg-lg {
+	margin-bottom: 30px;
+}
+
+
+.vertical-scroller {
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+	padding: 0;
+}
+.vertical-scroller .mask {
+	position: relative;
+	left: 0;
+	top: 10px;
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+}
+.vertical-scroller ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.vertical-scroller ul li {
+  	padding: 8px 0;
+}
+
+
+/* others style */
+.employee_deatlis_all{
+	float: left;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+}
+
+.employee_details ul{
+	list-style: outside none none;
+	padding: 0px;
+	margin: 0px 0px 0px 20px;
+}
+.employee_details ul li{
+	float: none;
+	margin: 0px;
+	padding: 0px 0px 4px;
+	}
+.staff_img{
+	float: left;
+}
+
+.staff_img img{
+	border: 4px solid rgb(207, 207, 207);
+    width: 70px;
+    height: auto;
+}
+.employee_details{
+	float: left; margin: 0; padding: 0;
+}
+
+
+.more_employeecontent{	
+	padding: 5px 10px;
+	display: block;
+	margin-top:80px;
+}
+
+.more_button{
+	float: right;
+}
+.more_button i{
+	font-size: 30px;
+}
+.employee_details_part{	
+	border-bottom: 1px solid rgb(222, 222, 222);
+	padding: 10px 0px;
+	background-color: rgb(243, 243, 243);
+}
+
+.bottom-margin-sm {
+	margin-bottom: 30px;
+}
+
+.inner-content_em {
+	background: #F2F2F2;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.sec_img_coll{
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 319px) {
+	.main-nav {
+		background-color: rgba(8, 72, 131, 0.9);
+	}
+	#header {
+		background: rgb(8, 72, 131) url(images/homepage-bg-small.jpg) no-repeat -275px 0;
+		height: 305px;
+	}
+	.university-logo {
+		position: absolute;
+		top: 48px;
+		width: 280px;
+	}
+	.website-title {
+		font-size: 16px;
+		font-weight: 200;
+		color: #FFF;
+		margin: 14px 2px;
+		width: 174px;
+	}
+	.navbar-brand {
+		padding: 8px;
+	}
+	.navbar-brand > img {
+		width: 48px;
+	}
+	.navbar-toggle {
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 0px;
+		float: right;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		margin-top: 8px;
+		padding: 12px 3px;
+		position: relative;
+	}
+	.fa-bars {
+		color: rgb(85, 200, 58);
+	}
+	.navbar-right li a {
+		border-right: none;
+		padding: 8px 12px;
+	}
+	.navbar-right li:first-child {
+		border-left: none;
+		border-right: none;
+	}
+	.dropdown-menu li {
+		border-left: none;
+	}
+	.dropdown-menu li:last-child {
+		border-bottom: none;
+	}
+	.homepage-program {
+		margin-top: -120px;
+	}
+	.green-bg {
+		background: rgba(85, 200, 58, 1.0);
+	}
+	.box {
+		width: 98.75%;
+		display: table-cell;
+	}
+}	
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+	.main-nav {
+		background-color: rgba(8, 72, 131, 0.9);
+	}
+	#header {
+		background: rgb(8, 72, 131) url(images/homepage-bg-small.jpg) no-repeat 0 0;
+	}
+	.university-logo {
+		position: absolute;
+		top: 48px;
+		width: 280px;
+	}
+	.website-title {
+		font-size: 16px;
+		font-weight: 200;
+		color: #FFF;
+		margin: 14px 2px;
+		width: 220px;
+	}
+	.navbar-brand {
+		padding: 8px;
+	}
+	.navbar-brand > img {
+		width: 48px;
+	}
+	.navbar-toggle {
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 0px;
+		float: right;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		margin-top: 8px;
+		padding: 9px 10px;
+		position: relative;
+	}
+	.fa-bars {
+		color: #FFF;
+	}
+	.navbar-right li a {
+		border-right: none;
+		padding: 8px 12px;
+	}
+	.navbar-right li:first-child {
+		border-left: none;
+		border-right: none;
+	}
+	.homepage-program {
+		margin-top: -392px;
+	}
+	.green-bg {
+		background: rgba(85, 200, 58, 1.0);
+	}
+}
